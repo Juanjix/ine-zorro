@@ -1,22 +1,22 @@
 const Menu = () => {
   return (
     // Your menu here 👇🏻
-    <div className="menu__container">
-      <ul>
+    <div>
+      <ul className="menu__container">
         <li>
-          <a>INICIO</a>
+          <a href="#Home">INICIO</a>
         </li>
-        <span></span>
+        <span>|</span>
         <li>
-          <a>UBICACION</a>
+          <a href="#Home">UBICACION</a>
         </li>
-        <span></span>
+        <span>|</span>
         <li>
-          <a>REGALOS</a>
+          <a href="#Home">REGALOS</a>
         </li>
-        <span></span>
+        <span>|</span>
         <li>
-          <a>RSVP</a>
+          <a href="#Home">RSVP</a>
         </li>
       </ul>
     </div>

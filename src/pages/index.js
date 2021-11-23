@@ -1,7 +1,8 @@
-import Menu from "components/menu";
+import React from "react";
+import LayoutPrimary from "layouts/layout-primary";
 
 const Home = () => {
-  return <Menu />;
+  return <LayoutPrimary></LayoutPrimary>;
 };
 
 export default Home;

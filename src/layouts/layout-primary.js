@@ -1,5 +1,6 @@
 // Components
-import Menu from 'components/menu/'
+import Menu from "components/menu/";
+import React from "react";
 
 const LayoutPrimary = ({ children }) => {
   return (
@@ -7,7 +8,7 @@ const LayoutPrimary = ({ children }) => {
       <Menu />
       {children}
     </React.Fragment>
-  )
-}
+  );
+};
 
-export default LayoutPrimary
+export default LayoutPrimary;
