@@ -1,4 +1,40 @@
 // Your "Home" styles here 👇🏻
 .evento {
+  margin-top: 72px;
   text-align: center;
+
+  .image1 {
+    width: 95%;
+    margin-top: 20px;
+    margin-bottom: 32px;
+
+    @include breakpoint(medium) {
+      width: 50%;
+      margin-bottom: 40px;
+    }
+  }
+
+  .fecha--hora {
+    h1 {
+      margin-bottom: 40px;
+    }
+  }
+
+  .direccion {
+    border-bottom: 1px dotted black;
+    padding-bottom: 30px;
+
+    h1 {
+      margin-bottom: 12px;
+    }
+
+    .image2 {
+      width: 25%;
+      margin-bottom: 12px;
+
+      @include breakpoint(medium) {
+        width: 10%;
+      }
+    }
+  }
 }
