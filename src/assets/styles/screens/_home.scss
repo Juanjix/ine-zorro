@@ -39,6 +39,8 @@
   }
 
   .como--llegar-container {
+    border-bottom: 1px dotted black;
+    padding-bottom: 120px;
     .como--llegar {
       margin-top: 40px;
       .image3 {
@@ -49,33 +51,45 @@
       }
     }
 
-    .image4 {
-      display: flex;
-      justify-content: center;
-      margin-left: 30px;
-      position: relative;
-
-      img {
+    .mapa {
+      position: absolute;
+      .ejemplo {
         width: 100%;
-        position: absolute;
+        position: relative;
+        margin-left: 33px;
         @include breakpoint(medium) {
-          width: 50%;
+          width: 60%;
+          margin-left: 0;
         }
       }
     }
 
-    .line-image1 {
+    .first-line--images {
       display: flex;
       justify-content: space-evenly;
+      margin-bottom: 120px;
       img {
-        width: 30%;
+        width: 70%;
         @include breakpoint(medium) {
-          width: 18%;
+          width: 50%;
         }
       }
       .first-photo {
+        transform: rotate(-5deg);
         margin-right: 120px;
       }
+
+      .second-photo {
+        transform: rotate(6deg);
+      }
+    }
+  }
+
+  .regalo__section--container {
+    margin-top: 100px;
+
+    .titulo {
+      width: 50%;
     }
   }
 }
