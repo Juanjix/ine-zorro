@@ -1,10 +1,10 @@
 // colors:start
-$white: #FFF;
+$white: #fff;
 $black: #000;
 
 $colors: (
   white: $white,
-  black: $black
+  black: $black,
 );
 // colors:end
 
@@ -19,16 +19,16 @@ $breakpoints: (
 // breakpoints:end
 
 // fonts:start
-$font--primary: 'Inter';
+$font--primary: "Inter";
 // fonts:end
 
 // font-weights:start
 $weights: (
-  100: '100',
-  300: '300',
-  400: '400',
-  500: '500',
-  600: '600',
-  700: '700',
+  100: "100",
+  300: "300",
+  400: "400",
+  500: "500",
+  600: "600",
+  700: "700",
 );
 // font-weights:end

@@ -5,10 +5,10 @@ import Menu from "components/menu/";
 
 const LayoutPrimary = ({ children }) => {
   return (
-    <React.Fragment>
+    <div className="container">
       <Menu />
       {children}
-    </React.Fragment>
+    </div>
   );
 };
 

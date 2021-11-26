@@ -1,5 +1,5 @@
 // Your "Home" styles here 👇🏻
-.evento {
+.home__container {
   margin-top: 72px;
   text-align: center;
 
@@ -22,7 +22,7 @@
 
   .direccion {
     border-bottom: 1px dotted black;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 
     h1 {
       margin-bottom: 12px;
@@ -34,6 +34,47 @@
 
       @include breakpoint(medium) {
         width: 10%;
+      }
+    }
+  }
+
+  .como--llegar-container {
+    .como--llegar {
+      margin-top: 40px;
+      .image3 {
+        width: 90%;
+        @include breakpoint(medium) {
+          width: 35%;
+        }
+      }
+    }
+
+    .image4 {
+      display: flex;
+      justify-content: center;
+      margin-left: 30px;
+      position: relative;
+
+      img {
+        width: 100%;
+        position: absolute;
+        @include breakpoint(medium) {
+          width: 50%;
+        }
+      }
+    }
+
+    .line-image1 {
+      display: flex;
+      justify-content: space-evenly;
+      img {
+        width: 30%;
+        @include breakpoint(medium) {
+          width: 18%;
+        }
+      }
+      .first-photo {
+        margin-right: 120px;
       }
     }
   }
