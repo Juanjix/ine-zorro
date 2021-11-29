@@ -45,7 +45,7 @@
     }
   }
   // STYLE COMO LLEGAR SECTION START
-  .como-llegar__container {
+  .ubicacion__container {
     .second--title {
       width: 70%;
 
@@ -75,6 +75,33 @@
     .travel--photo {
       width: 40%;
       margin-bottom: 20px;
+    }
+  }
+
+  .te-esperamos {
+    font-family: "Gotham-Medium";
+    .te-esperamos--title {
+      .fourth--title {
+        width: 100%;
+
+        @include breakpoint(small) {
+          width: 50%;
+        }
+      }
+    }
+    .cheers {
+      width: 30%;
+      @include breakpoint(medium) {
+        width: 14%;
+        margin-top: -30px;
+      }
+    }
+
+    h2 {
+      text-transform: uppercase;
+      @include breakpoint(medium) {
+        letter-spacing: 5pt;
+      }
     }
   }
   //   .pilar--images {

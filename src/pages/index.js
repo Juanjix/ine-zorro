@@ -32,8 +32,8 @@ import travelPhoto from "assets/images/regalos/recursoRecurso 14@2x.png";
 // import regalo4 from "assets/images/regalos/recursoRecurso 15@2x.png";
 
 // //imagenes te esperamos
-// import tituloTeEsperamos from "assets/images/te-esperamos/recursoRecurso 20@2x.png";
-// import cheers from "assets/images/te-esperamos/recursoRecurso 22@2x.png";
+import fourthTitle from "assets/images/te-esperamos/recursoRecurso 20@2x.png";
+import cheersImage from "assets/images/te-esperamos/recursoRecurso 22@2x.png";
 const Home = () => {
   return (
     <LayoutPrimary>
@@ -61,7 +61,7 @@ const Home = () => {
         {/* INICIO SECTION END */}
 
         {/* COMO LLEGAR SECTION START */}
-        <section className="como-llegar__container" id="como-llegar">
+        <section className="ubicacion__container" id="ubicacion">
           <img src={secondTitle} alt="ana y zorro" className="second--title" />
 
           <div className="mapa">
@@ -92,6 +92,25 @@ const Home = () => {
           </div>
         </section>
         {/* REGALOS SECTION END */}
+
+        {/* TE ESPERAMOS SECTION START */}
+
+        <section className="te-esperamos" id="rsvp">
+          <div className="te-esperamos--title">
+            <img
+              src={fourthTitle}
+              alt="ana y zorro"
+              className="fourth--title"
+            />
+          </div>
+          <img src={cheersImage} alt="ana y zorro" className="cheers" />
+
+          <div>
+            <h2>por favor confirmá tu asistencia</h2>
+            <h2>+54 9 11 6451 - 4123</h2>
+          </div>
+        </section>
+        {/* TE ESPERAMOS SECTION END */}
       </div>
     </LayoutPrimary>
   );
