@@ -111,6 +111,12 @@ const Home = () => {
           </div>
         </section>
         {/* TE ESPERAMOS SECTION END */}
+
+        {/* FOOTER START */}
+        <div className="footer">
+          <h1>#ineyzorro #18f</h1>
+        </div>
+        {/* FOOTER END */}
       </div>
     </LayoutPrimary>
   );

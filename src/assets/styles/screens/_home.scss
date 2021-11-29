@@ -83,7 +83,6 @@
     .te-esperamos--title {
       .fourth--title {
         width: 100%;
-
         @include breakpoint(small) {
           width: 50%;
         }
@@ -103,6 +102,14 @@
         letter-spacing: 5pt;
       }
     }
+  }
+
+  .footer {
+    font-family: "Gotham-Medium";
+    text-transform: uppercase;
+    letter-spacing: 5pt;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   //   .pilar--images {
   //     display: flex;
