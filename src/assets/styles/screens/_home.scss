@@ -26,9 +26,6 @@
   }
 
   .direccion {
-    border-bottom: 1px dotted black;
-    padding-bottom: 40px;
-
     h1 {
       margin-bottom: 12px;
       font-size: 50px;
@@ -47,8 +44,8 @@
       }
     }
   }
-
-  .como-llegar--container {
+  // STYLE COMO LLEGAR SECTION START
+  .como-llegar__container {
     .second--title {
       width: 70%;
 
@@ -68,103 +65,114 @@
         }
       }
     }
-
-    .pilar--images {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 200px;
-      img {
-        width: 70%;
-        display: none;
-        @include breakpoint(medium) {
-          width: 50%;
-          display: block;
-        }
-      }
-      .first-photo {
-        transform: rotate(-5deg);
-        margin-right: 120px;
-        .leaf2 {
-          width: 40%;
-        }
-      }
-
-      .second-photo {
-        transform: rotate(6deg);
-        display: flex;
-        flex-direction: column;
-        .leaf {
-          width: 55%;
-          transform: rotate(-6deg);
-        }
-      }
-    }
   }
-
-  .regalo__section--container {
-    margin-top: 50px;
-    padding-bottom: 30px;
-    border-bottom: 1px dotted black;
+  // STYLE COMO LLEGAR SECTION END
+  .regalos__container {
     font-family: "Baufra";
-    .title__section {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      .plane {
-        width: 35%;
-        margin: 0 auto 30px auto;
-        @include breakpoint(medium) {
-          margin: -80px auto 0px auto;
-        }
-      }
-      .titulo {
-        width: 100%;
-      }
+    .third--title {
+      width: 100%;
     }
-    .regalos_pics {
-      display: none;
-      justify-content: space-between;
-      @include breakpoint(medium) {
-        display: flex;
-        margin-top: -500px;
-      }
+    .travel--photo {
+      width: 40%;
+      margin-bottom: 20px;
     }
   }
+  //   .pilar--images {
+  //     display: flex;
+  //     justify-content: space-between;
+  //     margin-bottom: 200px;
+  //     img {
+  //       width: 70%;
+  //       display: none;
+  //       @include breakpoint(medium) {
+  //         width: 50%;
+  //         display: block;
+  //       }
+  //     }
+  //     .first-photo {
+  //       transform: rotate(-5deg);
+  //       margin-right: 120px;
+  //       .leaf2 {
+  //         width: 40%;
+  //       }
+  //     }
 
-  .asistencia--container {
-    border-bottom: 1px dotted black;
-    margin-bottom: 20px;
-    margin-top: 20px;
+  //     .second-photo {
+  //       transform: rotate(6deg);
+  //       display: flex;
+  //       flex-direction: column;
+  //       .leaf {
+  //         width: 55%;
+  //         transform: rotate(-6deg);
+  //       }
+  //     }
+  //   }
+  // }
 
-    .asistencia--inicio {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      .titulo {
-        width: 100%;
-        margin: 0 auto;
-        @include breakpoint(medium) {
-          width: 70%;
-        }
-      }
+  // .regalo__section--container {
+  //   margin-top: 50px;
+  //   padding-bottom: 30px;
+  //   border-bottom: 1px dotted black;
+  //   font-family: "Baufra";
+  //   .title__section {
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
 
-      .cheers {
-        width: 30%;
-        margin: 0 auto;
-        @include breakpoint(medium) {
-          width: 10%;
-        }
-      }
-    }
-    .text {
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-  }
+  //     .plane {
+  //       width: 35%;
+  //       margin: 0 auto 30px auto;
+  //       @include breakpoint(medium) {
+  //         margin: -80px auto 0px auto;
+  //       }
+  //     }
+  //     .titulo {
+  //       width: 100%;
+  //     }
+  //   }
+  //   .regalos_pics {
+  //     display: none;
+  //     justify-content: space-between;
+  //     @include breakpoint(medium) {
+  //       display: flex;
+  //       margin-top: -500px;
+  //     }
+  //   }
+  // }
 
-  .footer {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
+  // .asistencia--container {
+  //   border-bottom: 1px dotted black;
+  //   margin-bottom: 20px;
+  //   margin-top: 20px;
+
+  //   .asistencia--inicio {
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     .titulo {
+  //       width: 100%;
+  //       margin: 0 auto;
+  //       @include breakpoint(medium) {
+  //         width: 70%;
+  //       }
+  //     }
+
+  //     .cheers {
+  //       width: 30%;
+  //       margin: 0 auto;
+  //       @include breakpoint(medium) {
+  //         width: 10%;
+  //       }
+  //     }
+  //   }
+  //   .text {
+  //     font-weight: bold;
+  //     text-transform: uppercase;
+  //   }
+  // }
+
+  // .footer {
+  //   margin-top: 40px;
+  //   margin-bottom: 40px;
+  // }
 }
