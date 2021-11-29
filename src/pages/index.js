@@ -39,8 +39,8 @@ const Home = () => {
     <LayoutPrimary>
       <div className="home__container">
         {/* INICIO SECTION START */}
-        <section id="inicio">
-          <h3>X DIAS PARA DEJARLO TODO</h3>
+        <section className="hero" id="inicio">
+          <h3 className="cuenta-regresiva">x días para dejarlo todo</h3>
           <img src={image} alt="ine y zorro" className="first--title" />
           <div className="fecha--hora">
             <h1>18 . 02 . 2022</h1>

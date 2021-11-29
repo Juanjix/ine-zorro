@@ -2,45 +2,49 @@
 .home__container {
   margin-top: 30px;
   text-align: center;
-
-  .first--title {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 32px;
-
-    @include breakpoint(small) {
-      width: 65%;
-      margin-bottom: 40px;
+  .hero {
+    .cuenta-regresiva {
+      text-transform: uppercase;
+      letter-spacing: 5pt;
     }
-  }
+    .first--title {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 32px;
 
-  .fecha--hora {
-    font-family: "Gotham-Medium";
-    h1 {
-      margin-bottom: 40px;
-      @include breakpoint(medium) {
-        font-size: 50px;
-        line-height: 3rem;
-      }
-    }
-  }
-
-  .direccion {
-    h1 {
-      margin-bottom: 12px;
-      font-size: 50px;
-      font-family: "DINNextLTPro-BoldCondensed";
-      @include breakpoint(medium) {
-        font-size: 50px;
+      @include breakpoint(small) {
+        width: 65%;
+        margin-bottom: 40px;
       }
     }
 
-    .logo-herencia {
-      width: 25%;
-      margin-bottom: 12px;
+    .fecha--hora {
+      font-family: "Gotham-Medium";
+      h1 {
+        margin-bottom: 40px;
+        @include breakpoint(medium) {
+          font-size: 50px;
+          line-height: 3rem;
+        }
+      }
+    }
 
-      @include breakpoint(medium) {
-        width: 10%;
+    .direccion {
+      h1 {
+        font-size: 50px;
+        font-family: "DINNextLTPro-BoldCondensed";
+        @include breakpoint(medium) {
+          font-size: 50px;
+        }
+      }
+
+      .logo-herencia {
+        width: 25%;
+        margin-bottom: 12px;
+
+        @include breakpoint(medium) {
+          width: 10%;
+        }
       }
     }
   }
@@ -75,6 +79,10 @@
     .travel--photo {
       width: 40%;
       margin-bottom: 20px;
+      @include breakpoint(medium) {
+        width: 25%;
+        margin-top: -50px;
+      }
     }
   }
 
