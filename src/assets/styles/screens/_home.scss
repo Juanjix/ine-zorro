@@ -1,6 +1,6 @@
 // Your "Home" styles here 👇🏻
 .home__container {
-  margin-top: 72px;
+  margin-top: 30px;
   text-align: center;
 
   .first--title {
@@ -38,7 +38,7 @@
       }
     }
 
-    .image2 {
+    .logo-herencia {
       width: 25%;
       margin-bottom: 12px;
 
@@ -48,29 +48,23 @@
     }
   }
 
-  .como--llegar-container {
-    border-bottom: 1px dotted black;
-    padding-bottom: 120px;
-    .como--llegar {
-      margin-top: 40px;
+  .como-llegar--container {
+    .second--title {
+      width: 70%;
 
-      .image3 {
-        width: 100%;
-        @include breakpoint(medium) {
-          width: 35%;
-        }
+      @include breakpoint(medium) {
+        width: 50%;
       }
     }
-
     .mapa {
-      position: absolute;
-      .map {
-        margin-left: 33px;
+      margin-left: 45px;
+      img {
         width: 100%;
-        @include breakpoint(medium) {
-          width: 60%;
-          position: relative;
-          margin-left: 0;
+      }
+      @include breakpoint(medium) {
+        img {
+          width: 50%;
+          margin: 0 auto;
         }
       }
     }

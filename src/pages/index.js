@@ -5,8 +5,8 @@ import LayoutPrimary from "layouts/layout-primary";
 
 //images
 import image from "assets/images/evento/recursoRecurso 2@2x.png";
-import image2 from "assets/images/evento/recursoRecurso 1@2x.png";
-import image3 from "assets/images/como-llegar/recursoRecurso 12@2x.png";
+import logoHerencia from "assets/images/evento/recursoRecurso 1@2x.png";
+import secondTitle from "assets/images/como-llegar/recursoRecurso 12@2x.png";
 import mapa from "assets/images/como-llegar/recursoRecurso 11@2x.png";
 
 //imagenes seccion como llegar? PRIMERA FILA
@@ -38,6 +38,7 @@ const Home = () => {
   return (
     <LayoutPrimary>
       <div className="home__container">
+        {/* INICIO SECTION START */}
         <section id="inicio">
           <h3>X DIAS PARA DEJARLO TODO</h3>
           <img src={image} alt="ine y zorro" className="first--title" />
@@ -47,11 +48,27 @@ const Home = () => {
           </div>
 
           <div className="direccion">
-            <img src={image2} alt="ine y zorro" className="image2" />
+            <img
+              src={logoHerencia}
+              alt="ine y zorro"
+              className="logo-herencia"
+            />
             <h1>LA HERENCIA</h1>
             <h4>SARAVIA 1799, PILAR</h4>
           </div>
         </section>
+
+        {/* INICIO SECTION END */}
+
+        {/* COMO LLEGAR SECTION START */}
+        <section className="como-llegar--container" id="como-llegar">
+          <img src={secondTitle} alt="ana y zorro" className="second--title" />
+
+          <div className="mapa">
+            <img src={mapa} alt="ana y zorro" />
+          </div>
+        </section>
+        {/* COMO LLEGAR SECTION END */}
       </div>
     </LayoutPrimary>
   );

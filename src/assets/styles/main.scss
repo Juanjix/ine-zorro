@@ -76,4 +76,13 @@ body {
   .bold {
     font-weight: bold;
   }
+
+  section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    @include breakpoint(medium) {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+  }
 }
