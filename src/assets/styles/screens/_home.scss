@@ -3,20 +3,25 @@
   margin-top: 72px;
   text-align: center;
 
-  .image1 {
-    width: 95%;
+  .first--title {
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 32px;
 
-    @include breakpoint(medium) {
-      width: 50%;
+    @include breakpoint(small) {
+      width: 65%;
       margin-bottom: 40px;
     }
   }
 
   .fecha--hora {
+    font-family: "Gotham-Medium";
     h1 {
       margin-bottom: 40px;
+      @include breakpoint(medium) {
+        font-size: 50px;
+        line-height: 3rem;
+      }
     }
   }
 
@@ -26,6 +31,11 @@
 
     h1 {
       margin-bottom: 12px;
+      font-size: 50px;
+      font-family: "DINNextLTPro-BoldCondensed";
+      @include breakpoint(medium) {
+        font-size: 50px;
+      }
     }
 
     .image2 {
@@ -43,8 +53,9 @@
     padding-bottom: 120px;
     .como--llegar {
       margin-top: 40px;
+
       .image3 {
-        width: 90%;
+        width: 100%;
         @include breakpoint(medium) {
           width: 35%;
         }
@@ -53,43 +64,113 @@
 
     .mapa {
       position: absolute;
-      .ejemplo {
-        width: 100%;
-        position: relative;
+      .map {
         margin-left: 33px;
+        width: 100%;
         @include breakpoint(medium) {
           width: 60%;
+          position: relative;
           margin-left: 0;
         }
       }
     }
 
-    .first-line--images {
+    .pilar--images {
       display: flex;
-      justify-content: space-evenly;
-      margin-bottom: 120px;
+      justify-content: space-between;
+      margin-bottom: 200px;
       img {
         width: 70%;
+        display: none;
         @include breakpoint(medium) {
           width: 50%;
+          display: block;
         }
       }
       .first-photo {
         transform: rotate(-5deg);
         margin-right: 120px;
+        .leaf2 {
+          width: 40%;
+        }
       }
 
       .second-photo {
         transform: rotate(6deg);
+        display: flex;
+        flex-direction: column;
+        .leaf {
+          width: 55%;
+          transform: rotate(-6deg);
+        }
       }
     }
   }
 
   .regalo__section--container {
-    margin-top: 100px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px dotted black;
+    font-family: "Baufra";
+    .title__section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
-    .titulo {
-      width: 50%;
+      .plane {
+        width: 35%;
+        margin: 0 auto 30px auto;
+        @include breakpoint(medium) {
+          margin: -80px auto 0px auto;
+        }
+      }
+      .titulo {
+        width: 100%;
+      }
     }
+    .regalos_pics {
+      display: none;
+      justify-content: space-between;
+      @include breakpoint(medium) {
+        display: flex;
+        margin-top: -500px;
+      }
+    }
+  }
+
+  .asistencia--container {
+    border-bottom: 1px dotted black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    .asistencia--inicio {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .titulo {
+        width: 100%;
+        margin: 0 auto;
+        @include breakpoint(medium) {
+          width: 70%;
+        }
+      }
+
+      .cheers {
+        width: 30%;
+        margin: 0 auto;
+        @include breakpoint(medium) {
+          width: 10%;
+        }
+      }
+    }
+    .text {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  .footer {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }

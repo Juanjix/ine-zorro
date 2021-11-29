@@ -4,7 +4,7 @@ const Menu = () => {
     <div>
       <ul className="menu__container">
         <li>
-          <a href="#Home">INICIO</a>
+          <a href="#inicio">INICIO</a>
         </li>
 
         <li>
@@ -13,10 +13,6 @@ const Menu = () => {
 
         <li>
           <a href="#Home">DRESSCODE</a>
-        </li>
-
-        <li>
-          <a href="#Home">REGALOS</a>
         </li>
 
         <li>
