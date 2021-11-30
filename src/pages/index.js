@@ -10,18 +10,18 @@ import secondTitle from "assets/images/como-llegar/recursoRecurso 12@2x.png";
 import mapa from "assets/images/como-llegar/recursoRecurso 11@2x.png";
 
 // //imagenes seccion como llegar? PRIMERA FILA
-// import image5 from "assets/images/como-llegar/recursoRecurso 4@2x.png";
-// import image6 from "assets/images/como-llegar/recursoRecurso 3@2x.png";
-// import hoja from "assets/images/como-llegar/recursoRecurso 7@2x.png";
+import firstPhotoMap from "assets/images/como-llegar/recursoRecurso 4@2x.png";
+import secondPhotoMap from "assets/images/como-llegar/recursoRecurso 3@2x.png";
+import lief from "assets/images/como-llegar/recursoRecurso 7@2x.png";
 
 // //imagenes seccion como llegar? SEGUNDA FILA
-// import image7 from "assets/images/como-llegar/recursoRecurso 5@2x.png";
-// import image8 from "assets/images/como-llegar/recursoRecurso 6@2x.png";
-// import hoja2 from "assets/images/como-llegar/recursoRecurso 8@2x.png";
+import thirdPhotoMap from "assets/images/como-llegar/recursoRecurso 5@2x.png";
+import fourdPhotoMap from "assets/images/como-llegar/recursoRecurso 6@2x.png";
+import lief2 from "assets/images/como-llegar/recursoRecurso 8@2x.png";
 
-// //imagenes seccion como llegar? TERCERA FILA
-// import image9 from "assets/images/como-llegar/recursoRecurso 9@2x.png";
-// import image10 from "assets/images/como-llegar/recursoRecurso 10@2x.png";
+//imagenes seccion como llegar? TERCERA FILA
+import fifthPhotoMap from "assets/images/como-llegar/recursoRecurso 9@2x.png";
+import sixthPhotoMap from "assets/images/como-llegar/recursoRecurso 10@2x.png";
 
 // //imagenes regalo
 import thirdTitle from "assets/images/regalos/recursoRecurso 13@2x.png";
@@ -66,6 +66,59 @@ const Home = () => {
 
           <div className="mapa">
             <img src={mapa} alt="ana y zorro" />
+          </div>
+          <div className="stop--images row">
+            <div className="col-md-5">
+              <img
+                src={firstPhotoMap}
+                alt="ana y zorro"
+                className="first-photo"
+              />
+            </div>
+
+            <div className="ejemplo col-md-5">
+              <img
+                src={secondPhotoMap}
+                alt="ana y zorro"
+                className="second-photo"
+              />
+              <img src={lief} alt="ana y zorro" className="lief" />
+            </div>
+          </div>
+          <div className="stop--images">
+            <div className="col-md-5">
+              <img src={lief2} alt="ana y zorro" className="lief" />
+              <img
+                src={thirdPhotoMap}
+                alt="ana y zorro"
+                className="first-photo"
+              />
+            </div>
+
+            <div className="ejemplo col-md-8">
+              <img
+                src={fourdPhotoMap}
+                alt="ana y zorro"
+                className="second-photo"
+              />
+            </div>
+          </div>
+          <div className="stop--images row">
+            <div className="col-md-5">
+              <img
+                src={fifthPhotoMap}
+                alt="ana y zorro"
+                className="first-photo"
+              />
+            </div>
+
+            <div className="ejemplo col-md-5">
+              <img
+                src={sixthPhotoMap}
+                alt="ana y zorro"
+                className="second-photo"
+              />
+            </div>
           </div>
         </section>
         {/* COMO LLEGAR SECTION END */}
