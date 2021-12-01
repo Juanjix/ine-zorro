@@ -112,6 +112,40 @@
         margin-top: -50px;
       }
     }
+
+    .regalo-images {
+      justify-content: space-between;
+      @include breakpoint(small) {
+        margin-top: -500px;
+        padding-bottom: 150px;
+      }
+      img {
+        display: none;
+        @include breakpoint(small) {
+          display: flex;
+        }
+      }
+
+      .gift-photo1 {
+        width: 100%;
+      }
+      .gift-photo2 {
+        width: 85%;
+        @include breakpoint(medium) {
+          width: 100%;
+        }
+      }
+      .gift-photo3 {
+        width: 60%;
+        margin-bottom: 160px;
+        margin-top: 20px;
+        margin-left: 100px;
+      }
+      .gift-photo4 {
+        width: 90%;
+        margin-left: 30px;
+      }
+    }
   }
 
   .te-esperamos {

@@ -26,10 +26,10 @@ import sixthPhotoMap from "assets/images/como-llegar/recursoRecurso 10@2x.png";
 // //imagenes regalo
 import thirdTitle from "assets/images/regalos/recursoRecurso 13@2x.png";
 import travelPhoto from "assets/images/regalos/recursoRecurso 14@2x.png";
-// import regalo1 from "assets/images/regalos/recursoRecurso 18@2x.png";
-// import regalo2 from "assets/images/regalos/recursoRecurso 16@2x.png";
-// import regalo3 from "assets/images/regalos/recursoRecurso 17@2x.png";
-// import regalo4 from "assets/images/regalos/recursoRecurso 15@2x.png";
+import giftPhoto1 from "assets/images/regalos/recursoRecurso 16@2x.png";
+import giftPhoto2 from "assets/images/regalos/recursoRecurso 18@2x.png";
+import giftPhoto3 from "assets/images/regalos/recursoRecurso 15@2x.png";
+import giftPhoto4 from "assets/images/regalos/recursoRecurso 17@2x.png";
 
 // //imagenes te esperamos
 import fourthTitle from "assets/images/te-esperamos/recursoRecurso 20@2x.png";
@@ -142,6 +142,16 @@ const Home = () => {
             <br />
             <br />
             <h1>¡MUCHISIMAS GRACIAS!</h1>
+          </div>
+          <div className="regalo-images row">
+            <div className="col-md-3">
+              <img src={giftPhoto1} alt="ine y zorro" className="gift-photo1" />
+              <img src={giftPhoto2} alt="ine y zorro" className="gift-photo2" />
+            </div>
+            <div className="col-md-3">
+              <img src={giftPhoto3} alt="ine y zorro" className="gift-photo3" />
+              <img src={giftPhoto4} alt="ine y zorro" className="gift-photo4" />
+            </div>
           </div>
         </section>
         {/* REGALOS SECTION END */}
