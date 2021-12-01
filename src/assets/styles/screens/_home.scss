@@ -219,14 +219,15 @@
     }
 
     .te-esperamos--images {
-      justify-content: space-between;
-      margin-top: -300px;
-      @include breakpoint(medium) {
+      display: none;
+      @include breakpoint(small) {
+        display: flex;
+        justify-content: space-between;
         margin-top: -350px;
       }
       .te-esperamos-img1 {
         width: 70%;
-        @include breakpoint(medium) {
+        @include breakpoint(small) {
           margin-right: 120px;
           margin-top: 40px;
         }
