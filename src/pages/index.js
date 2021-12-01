@@ -31,9 +31,13 @@ import giftPhoto2 from "assets/images/regalos/recursoRecurso 18@2x.png";
 import giftPhoto3 from "assets/images/regalos/recursoRecurso 15@2x.png";
 import giftPhoto4 from "assets/images/regalos/recursoRecurso 17@2x.png";
 
-// //imagenes te esperamos
+//imagenes confirmación section
 import fourthTitle from "assets/images/te-esperamos/recursoRecurso 20@2x.png";
 import cheersImage from "assets/images/te-esperamos/recursoRecurso 22@2x.png";
+import img1 from "assets/images/te-esperamos/recursoRecurso 21@2x.png";
+import img2 from "assets/images/te-esperamos/recursoRecurso 19@2x.png";
+import lief3 from "assets/images/te-esperamos/recursoRecurso 23@2x.png";
+
 const Home = () => {
   return (
     <LayoutPrimary>
@@ -171,6 +175,14 @@ const Home = () => {
           <div>
             <h2>por favor confirmá tu asistencia</h2>
             <h2>+54 9 11 6451 - 4123</h2>
+          </div>
+          <div className="te-esperamos--images row">
+            <div className="col-md-3">
+              <img src={img1} alt="ine y zorro" className="te-esperamos-img1" />
+            </div>
+            <div className="col-md-3">
+              <img src={img2} alt="ine y zorro" className="te-esperamos-img2" />
+            </div>
           </div>
         </section>
         {/* TE ESPERAMOS SECTION END */}
