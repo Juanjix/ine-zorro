@@ -16,7 +16,7 @@ import lief from "assets/images/como-llegar/recursoRecurso 7@2x.png";
 
 // //imagenes seccion como llegar? SEGUNDA FILA
 import thirdPhotoMap from "assets/images/como-llegar/recursoRecurso 5@2x.png";
-import fourdPhotoMap from "assets/images/como-llegar/recursoRecurso 6@2x.png";
+import fourPhotoMap from "assets/images/como-llegar/recursoRecurso 6@2x.png";
 import lief2 from "assets/images/como-llegar/recursoRecurso 8@2x.png";
 
 //imagenes seccion como llegar? TERCERA FILA
@@ -71,56 +71,67 @@ const Home = () => {
           <div className="mapa">
             <img src={mapa} alt="ana y zorro" />
           </div>
+
           <div className="stop--images row">
             <div className="col-md-5">
               <img
                 src={firstPhotoMap}
                 alt="ana y zorro"
-                className="first-photo"
+                className="first-photo-map"
               />
             </div>
 
-            <div className="ejemplo col-md-5">
-              <img
-                src={secondPhotoMap}
-                alt="ana y zorro"
-                className="second-photo"
-              />
-              <img src={lief} alt="ana y zorro" className="lief" />
+            <div className="ejemplo col-md-6">
+              <div>
+                <img
+                  src={secondPhotoMap}
+                  alt="ana y zorro"
+                  className="second-photo-map"
+                />
+              </div>
+              <div>
+                <img src={lief} alt="ana y zorro" className="lief" />
+              </div>
             </div>
           </div>
+
           <div className="stop--images">
-            <div className="col-md-5">
-              <img src={lief2} alt="ana y zorro" className="lief" />
-              <img
-                src={thirdPhotoMap}
-                alt="ana y zorro"
-                className="first-photo"
-              />
+            <div className="ej col-md-6">
+              <div>
+                <img src={lief2} alt="ana y zorro" className="lief2" />
+              </div>
+              <div>
+                <img
+                  src={thirdPhotoMap}
+                  alt="ana y zorro"
+                  className="third-photo-map"
+                />
+              </div>
             </div>
 
-            <div className="ejemplo col-md-8">
+            <div className="col-md-6">
               <img
-                src={fourdPhotoMap}
+                src={fourPhotoMap}
                 alt="ana y zorro"
-                className="second-photo"
+                className="four-photo-map"
               />
             </div>
           </div>
+
           <div className="stop--images row">
-            <div className="col-md-5">
+            <div className="col-md-4">
               <img
                 src={fifthPhotoMap}
                 alt="ana y zorro"
-                className="first-photo"
+                className="fifth-photo-map"
               />
             </div>
 
-            <div className="ejemplo col-md-5">
+            <div className="col-md-6">
               <img
                 src={sixthPhotoMap}
                 alt="ana y zorro"
-                className="second-photo"
+                className="sixth-photo-map"
               />
             </div>
           </div>
