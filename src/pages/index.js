@@ -1,29 +1,37 @@
+// React
 import React from "react";
 
-//Layout
+// Layout
 import LayoutPrimary from "layouts/layout-primary";
 
-//images
+// Images
 import image from "assets/images/evento/recursoRecurso 2@2x.png";
 import logoHerencia from "assets/images/evento/recursoRecurso 1@2x.png";
 import secondTitle from "assets/images/como-llegar/recursoRecurso 12@2x.png";
 import mapa from "assets/images/como-llegar/recursoRecurso 11@2x.png";
 
-// //imagenes seccion como llegar? PRIMERA FILA
+// Imagenes seccion como llegar? PRIMERA FILA
 import firstPhotoMap from "assets/images/como-llegar/recursoRecurso 4@2x.png";
 import secondPhotoMap from "assets/images/como-llegar/recursoRecurso 3@2x.png";
 import lief from "assets/images/como-llegar/recursoRecurso 7@2x.png";
 
-// //imagenes seccion como llegar? SEGUNDA FILA
+// Imagenes seccion como llegar? SEGUNDA FILA
 import thirdPhotoMap from "assets/images/como-llegar/recursoRecurso 5@2x.png";
 import fourPhotoMap from "assets/images/como-llegar/recursoRecurso 6@2x.png";
 import lief2 from "assets/images/como-llegar/recursoRecurso 8@2x.png";
 
-//imagenes seccion como llegar? TERCERA FILA
+// Imagenes seccion como llegar? TERCERA FILA
 import fifthPhotoMap from "assets/images/como-llegar/recursoRecurso 9@2x.png";
 import sixthPhotoMap from "assets/images/como-llegar/recursoRecurso 10@2x.png";
 
-// //imagenes regalo
+// Imagenes section dresscode
+import dressTitle from "assets/images/dresscode/recursoRecurso 5@2x.png";
+import dressCodeImage1 from "assets/images/dresscode/recursoRecurso 4@2x.png";
+import dressCodeLief1 from "assets/images/dresscode/recursoRecurso 1@2x.png";
+import dressCodeImage2 from "assets/images/dresscode/recursoRecurso 2@2x.png";
+import dressCodeLief2 from "assets/images/dresscode/recursoRecurso 3@2x.png";
+
+// Imagenes regalo
 import thirdTitle from "assets/images/regalos/recursoRecurso 13@2x.png";
 import travelPhoto from "assets/images/regalos/recursoRecurso 14@2x.png";
 import giftPhoto1 from "assets/images/regalos/recursoRecurso 16@2x.png";
@@ -31,12 +39,14 @@ import giftPhoto2 from "assets/images/regalos/recursoRecurso 18@2x.png";
 import giftPhoto3 from "assets/images/regalos/recursoRecurso 15@2x.png";
 import giftPhoto4 from "assets/images/regalos/recursoRecurso 17@2x.png";
 
-//imagenes confirmación section
+// Imagenes confirmación section
 import fourthTitle from "assets/images/te-esperamos/recursoRecurso 20@2x.png";
 import cheersImage from "assets/images/te-esperamos/recursoRecurso 22@2x.png";
 import img1 from "assets/images/te-esperamos/recursoRecurso 21@2x.png";
 import img2 from "assets/images/te-esperamos/recursoRecurso 19@2x.png";
-// import lief3 from "assets/images/te-esperamos/recursoRecurso 23@2x.png";
+
+// Footer image
+import lief3 from "assets/images/te-esperamos/recursoRecurso 23@2x.png";
 
 const Home = () => {
   return (
@@ -137,6 +147,52 @@ const Home = () => {
           </div>
         </section>
         {/* COMO LLEGAR SECTION END */}
+        {/* DRESSCODE SECTION START */}
+        <section className="dresscode__container">
+          <img src={dressTitle} alt="ine y zorro" width="40%" />
+          <div>
+            <h2>mujeres</h2>
+            <h2 className="text">
+              corto o largo ... lo que prefieras
+              <br /> ponerte vas a estar bárbara!
+            </h2>
+            <br />
+            <br />
+            <h2>hombres</h2>
+            <h2 className="text">
+              abstenerse de trajes calurosos.
+              <br /> Porque ni el novio se lo va a poner!
+              <br /> pero no por eso dejes de venir de fiesta
+            </h2>
+          </div>
+          <div className="dress-code--images row">
+            <div className="col-md-1">
+              <img
+                src={dressCodeLief1}
+                alt="ine y zorro"
+                className="dc-lief1"
+              />
+              <img
+                src={dressCodeImage1}
+                alt="ine y zorro"
+                className="dc-image1"
+              />
+            </div>
+            <div className="col-md-5">
+              <img
+                src={dressCodeLief2}
+                alt="ine y zorro"
+                className="dc-lief2"
+              />
+              <img
+                src={dressCodeImage2}
+                alt="ine y zorro"
+                className="dc-image2"
+              />
+            </div>
+          </div>
+        </section>
+        {/* DRESSCODE SECTION END */}
 
         {/* REGALOS SECTION START */}
         <section className="regalos__container" id="regalos">
@@ -201,6 +257,9 @@ const Home = () => {
         {/* FOOTER START */}
         <div className="footer">
           <h1>#ineyzorro #18f</h1>
+          <div className="footer-image">
+            <img src={lief3} alt="ine y zorro" className="lief3" />
+          </div>
         </div>
         {/* FOOTER END */}
       </div>

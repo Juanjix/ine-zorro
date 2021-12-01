@@ -137,6 +137,55 @@
     }
   } // STYLE COMO LLEGAR SECTION END
 
+  .dresscode__container {
+    text-transform: uppercase;
+    letter-spacing: 5pt;
+
+    @include breakpoint(medium) {
+      padding-bottom: 600px;
+    }
+
+    .text {
+      font-family: "Baufra";
+    }
+
+    .dress-code--images {
+      display: none;
+      justify-content: space-between;
+
+      @include breakpoint(medium) {
+        display: flex;
+        margin-top: -550px;
+        position: relative;
+      }
+
+      .dc-image1 {
+        width: 20%;
+        position: absolute;
+        margin-right: 10px;
+      }
+      .dc-lief1 {
+        width: 10%;
+        position: absolute;
+      }
+      .dc-image2 {
+        width: 18%;
+        position: absolute;
+        padding-bottom: 20px;
+        @include breakpoint(large) {
+          margin-left: 40px;
+          margin-top: 100px;
+        }
+      }
+      .dc-lief2 {
+        width: 15%;
+        position: absolute;
+        @include breakpoint(large) {
+          margin-left: 170px;
+        }
+      }
+    }
+  }
   //STYLE REGALO SECTION START
   .regalos__container {
     font-family: "Baufra";
@@ -244,5 +293,24 @@
     letter-spacing: 5pt;
     margin-top: 50px;
     margin-bottom: 50px;
+    position: relative;
+
+    .footer-image {
+      .lief3 {
+        display: none;
+        @include breakpoint(small) {
+          display: block;
+          position: absolute;
+          margin-top: -220px;
+          margin-left: 20px;
+          width: 25%;
+          right: 0;
+        }
+
+        @include breakpoint(medium) {
+          margin-top: -300px;
+        }
+      }
+    }
   }
 }
