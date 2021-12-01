@@ -36,7 +36,7 @@ import fourthTitle from "assets/images/te-esperamos/recursoRecurso 20@2x.png";
 import cheersImage from "assets/images/te-esperamos/recursoRecurso 22@2x.png";
 import img1 from "assets/images/te-esperamos/recursoRecurso 21@2x.png";
 import img2 from "assets/images/te-esperamos/recursoRecurso 19@2x.png";
-import lief3 from "assets/images/te-esperamos/recursoRecurso 23@2x.png";
+// import lief3 from "assets/images/te-esperamos/recursoRecurso 23@2x.png";
 
 const Home = () => {
   return (
