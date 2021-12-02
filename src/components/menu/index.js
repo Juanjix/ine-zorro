@@ -8,15 +8,19 @@ const Menu = () => {
         </li>
 
         <li>
-          <a href="#Home">UBICACION</a>
+          <a href="#ubicacion">UBICACION</a>
         </li>
 
         <li>
-          <a href="#Home">DRESSCODE</a>
+          <a href="#dresscode">DRESSCODE</a>
         </li>
 
         <li>
-          <a href="#Home">RSVP</a>
+          <a href="#regalos">REGALOS</a>
+        </li>
+
+        <li>
+          <a href="#rsvp">RSVP</a>
         </li>
       </ul>
     </div>

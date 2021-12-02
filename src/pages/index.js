@@ -22,13 +22,13 @@ import lief2 from "assets/images/como-llegar/recursoRecurso 8@2x.png";
 
 // Imagenes seccion como llegar? TERCERA FILA
 import fifthPhotoMap from "assets/images/como-llegar/recursoRecurso 9@2x.png";
-import sixthPhotoMap from "assets/images/como-llegar/recursoRecurso 10@2x.png";
+import sixthPhotoMap from "assets/images/como-llegar/recursoRecurso 2@2x.png";
 
 // Imagenes section dresscode
 import dressTitle from "assets/images/dresscode/recursoRecurso 5@2x.png";
 import dressCodeImage1 from "assets/images/dresscode/recursoRecurso 4@2x.png";
 import dressCodeLief1 from "assets/images/dresscode/recursoRecurso 1@2x.png";
-import dressCodeImage2 from "assets/images/dresscode/recursoRecurso 2@2x.png";
+import dressCodeImage2 from "assets/images/dresscode/recursoRecurso 10@2x.png";
 import dressCodeLief2 from "assets/images/dresscode/recursoRecurso 3@2x.png";
 
 // Imagenes regalo
@@ -91,7 +91,7 @@ const Home = () => {
               />
             </div>
 
-            <div className="ejemplo col-md-6">
+            <div className="cs-hotel-section col-md-6">
               <div>
                 <img
                   src={secondPhotoMap}
@@ -148,9 +148,9 @@ const Home = () => {
         </section>
         {/* COMO LLEGAR SECTION END */}
         {/* DRESSCODE SECTION START */}
-        <section className="dresscode__container">
+        <section className="dresscode__container" id="dresscode">
           <img src={dressTitle} alt="ine y zorro" width="40%" />
-          <div>
+          <div className="text-dresscode">
             <h2>mujeres</h2>
             <h2 className="text">
               corto o largo ... lo que prefieras
@@ -179,16 +179,21 @@ const Home = () => {
               />
             </div>
             <div className="col-md-5">
-              <img
-                src={dressCodeLief2}
-                alt="ine y zorro"
-                className="dc-lief2"
-              />
-              <img
-                src={dressCodeImage2}
-                alt="ine y zorro"
-                className="dc-image2"
-              />
+              <div>
+                <img
+                  src={dressCodeLief2}
+                  alt="ine y zorro"
+                  className="dc-lief2"
+                />
+              </div>
+
+              <div>
+                <img
+                  src={dressCodeImage2}
+                  alt="ine y zorro"
+                  className="dc-image2"
+                />
+              </div>
             </div>
           </div>
         </section>
