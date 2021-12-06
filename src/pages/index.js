@@ -1,5 +1,5 @@
 // React
-import React from "react";
+import React, { useEffect } from "react";
 
 // Layout
 import LayoutPrimary from "layouts/layout-primary";
@@ -48,7 +48,15 @@ import img2 from "assets/images/te-esperamos/recursoRecurso 19@2x.png";
 // Footer image
 import lief3 from "assets/images/te-esperamos/recursoRecurso 23@2x.png";
 
+import Aos from "aos";
+import "aos/dist/aos";
+
 const Home = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 3000, // values from 0 to 3000, with step 50ms
+    });
+  });
   return (
     <LayoutPrimary>
       <div className="home__container">
@@ -83,7 +91,7 @@ const Home = () => {
           </div>
 
           <div className="stop--images row">
-            <div className="col-md-5">
+            <div data-aos="fade-right" className="col-md-5">
               <img
                 src={firstPhotoMap}
                 alt="ana y zorro"
@@ -92,14 +100,14 @@ const Home = () => {
             </div>
 
             <div className="cs-hotel-section col-md-6">
-              <div>
+              <div data-aos="fade-left">
                 <img
                   src={secondPhotoMap}
                   alt="ana y zorro"
                   className="second-photo-map"
                 />
               </div>
-              <div>
+              <div data-aos="fade-left">
                 <img src={lief} alt="ana y zorro" className="lief" />
               </div>
             </div>
@@ -107,10 +115,10 @@ const Home = () => {
 
           <div className="stop--images">
             <div className="ej col-md-6">
-              <div>
+              <div data-aos="fade-right">
                 <img src={lief2} alt="ana y zorro" className="lief2" />
               </div>
-              <div>
+              <div data-aos="fade-right">
                 <img
                   src={thirdPhotoMap}
                   alt="ana y zorro"
@@ -119,7 +127,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="col-md-6">
+            <div data-aos="fade-left" className="col-md-6">
               <img
                 src={fourPhotoMap}
                 alt="ana y zorro"
@@ -129,7 +137,7 @@ const Home = () => {
           </div>
 
           <div className="stop--images row">
-            <div className="col-md-4">
+            <div data-aos="fade-right" className="col-md-4">
               <img
                 src={fifthPhotoMap}
                 alt="ana y zorro"
@@ -137,7 +145,7 @@ const Home = () => {
               />
             </div>
 
-            <div className="col-md-6">
+            <div data-aos="fade-left" className="col-md-6">
               <img
                 src={sixthPhotoMap}
                 alt="ana y zorro"
@@ -167,16 +175,22 @@ const Home = () => {
           </div>
           <div className="dress-code--images row">
             <div className="col-md-1">
-              <img
-                src={dressCodeLief1}
-                alt="ine y zorro"
-                className="dc-lief1"
-              />
-              <img
-                src={dressCodeImage1}
-                alt="ine y zorro"
-                className="dc-image1"
-              />
+              <div>
+                <img
+                  src={dressCodeLief1}
+                  alt="ine y zorro"
+                  className="dc-lief1"
+                  data-aos="fade-right"
+                />
+              </div>
+              <div>
+                <img
+                  src={dressCodeImage1}
+                  alt="ine y zorro"
+                  className="dc-image1"
+                  data-aos="fade-right"
+                />
+              </div>
             </div>
             <div className="col-md-5">
               <div>
@@ -184,6 +198,7 @@ const Home = () => {
                   src={dressCodeLief2}
                   alt="ine y zorro"
                   className="dc-lief2"
+                  data-aos="fade-left"
                 />
               </div>
 
@@ -192,6 +207,7 @@ const Home = () => {
                   src={dressCodeImage2}
                   alt="ine y zorro"
                   className="dc-image2"
+                  data-aos="fade-left"
                 />
               </div>
             </div>
@@ -220,11 +236,11 @@ const Home = () => {
             <h1>¡MUCHISIMAS GRACIAS!</h1>
           </div>
           <div className="regalo-images row">
-            <div className="col-md-3">
+            <div className="col-md-3" data-aos="fade-right">
               <img src={giftPhoto1} alt="ine y zorro" className="gift-photo1" />
               <img src={giftPhoto2} alt="ine y zorro" className="gift-photo2" />
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3" data-aos="fade-left">
               <img src={giftPhoto3} alt="ine y zorro" className="gift-photo3" />
               <img src={giftPhoto4} alt="ine y zorro" className="gift-photo4" />
             </div>
@@ -250,10 +266,20 @@ const Home = () => {
           </div>
           <div className="te-esperamos--images row">
             <div className="col-md-3">
-              <img src={img1} alt="ine y zorro" className="te-esperamos-img1" />
+              <img
+                src={img1}
+                alt="ine y zorro"
+                className="te-esperamos-img1"
+                data-aos="fade-right"
+              />
             </div>
             <div className="col-md-3">
-              <img src={img2} alt="ine y zorro" className="te-esperamos-img2" />
+              <img
+                src={img2}
+                alt="ine y zorro"
+                className="te-esperamos-img2"
+                data-aos="fade-left"
+              />
             </div>
           </div>
         </section>
@@ -263,7 +289,12 @@ const Home = () => {
         <div className="footer">
           <h1>#ineyzorro #18f</h1>
           <div className="footer-image">
-            <img src={lief3} alt="ine y zorro" className="lief3" />
+            <img
+              src={lief3}
+              alt="ine y zorro"
+              className="lief3"
+              data-aos="fade-left"
+            />
           </div>
         </div>
         {/* FOOTER END */}
