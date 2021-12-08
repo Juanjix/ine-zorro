@@ -91,38 +91,51 @@ const Home = () => {
           </div>
 
           <div className="stop--images row">
-            <div data-aos="fade-right" className="col-md-5">
+            <div className="col-md-5">
               <img
                 src={firstPhotoMap}
                 alt="ana y zorro"
                 className="first-photo-map"
+                data-aos="fade-right"
               />
             </div>
 
             <div className="cs-hotel-section col-md-6">
-              <div data-aos="fade-left">
+              <div>
                 <img
                   src={secondPhotoMap}
                   alt="ana y zorro"
                   className="second-photo-map"
+                  data-aos="fade-left"
                 />
               </div>
-              <div data-aos="fade-left">
-                <img src={lief} alt="ana y zorro" className="lief" />
+              <div>
+                <img
+                  src={lief}
+                  alt="ana y zorro"
+                  className="lief"
+                  data-aos="fade-left"
+                />
               </div>
             </div>
           </div>
 
           <div className="stop--images">
             <div className="ej col-md-6">
-              <div data-aos="fade-right">
-                <img src={lief2} alt="ana y zorro" className="lief2" />
+              <div>
+                <img
+                  src={lief2}
+                  alt="ana y zorro"
+                  className="lief2"
+                  data-aos="fade-right"
+                />
               </div>
-              <div data-aos="fade-right">
+              <div>
                 <img
                   src={thirdPhotoMap}
                   alt="ana y zorro"
                   className="third-photo-map"
+                  data-aos="fade-right"
                 />
               </div>
             </div>
@@ -132,24 +145,27 @@ const Home = () => {
                 src={fourPhotoMap}
                 alt="ana y zorro"
                 className="four-photo-map"
+                data-aos="fade-left"
               />
             </div>
           </div>
 
           <div className="stop--images row">
-            <div data-aos="fade-right" className="col-md-4">
+            <div className="col-md-4">
               <img
                 src={fifthPhotoMap}
                 alt="ana y zorro"
                 className="fifth-photo-map"
+                data-aos="fade-right"
               />
             </div>
 
-            <div data-aos="fade-left" className="col-md-6">
+            <div className="col-md-6">
               <img
                 src={sixthPhotoMap}
                 alt="ana y zorro"
                 className="sixth-photo-map"
+                data-aos="fade-left"
               />
             </div>
           </div>
@@ -236,13 +252,33 @@ const Home = () => {
             <h1>¡MUCHISIMAS GRACIAS!</h1>
           </div>
           <div className="regalo-images row">
-            <div className="col-md-3" data-aos="fade-right">
-              <img src={giftPhoto1} alt="ine y zorro" className="gift-photo1" />
-              <img src={giftPhoto2} alt="ine y zorro" className="gift-photo2" />
+            <div className="col-md-3">
+              <img
+                src={giftPhoto1}
+                alt="ine y zorro"
+                className="gift-photo1"
+                data-aos="fade-right"
+              />
+              <img
+                src={giftPhoto2}
+                alt="ine y zorro"
+                className="gift-photo2"
+                data-aos="fade-right"
+              />
             </div>
-            <div className="col-md-3" data-aos="fade-left">
-              <img src={giftPhoto3} alt="ine y zorro" className="gift-photo3" />
-              <img src={giftPhoto4} alt="ine y zorro" className="gift-photo4" />
+            <div className="col-md-3">
+              <img
+                src={giftPhoto3}
+                alt="ine y zorro"
+                className="gift-photo3"
+                data-aos="fade-left"
+              />
+              <img
+                src={giftPhoto4}
+                alt="ine y zorro"
+                className="gift-photo4"
+                data-aos="fade-left"
+              />
             </div>
           </div>
         </section>
