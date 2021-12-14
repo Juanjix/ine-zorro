@@ -87,7 +87,7 @@ const Home = () => {
           <img src={secondTitle} alt="ana y zorro" className="second--title" />
 
           <div className="mapa">
-            <img src={mapa} alt="ana y zorro" />
+            <img src={mapa} alt="ana y zorro" data-aos="fade-in" />
           </div>
 
           <div className="stop--images row">
@@ -100,7 +100,7 @@ const Home = () => {
               />
             </div>
 
-            <div className="cs-hotel-section col-md-6">
+            <div className="cs-hotel-section col-md-5">
               <div>
                 <img
                   src={secondPhotoMap}
@@ -173,7 +173,12 @@ const Home = () => {
         {/* COMO LLEGAR SECTION END */}
         {/* DRESSCODE SECTION START */}
         <section className="dresscode__container" id="dresscode">
-          <img src={dressTitle} alt="ine y zorro" width="40%" />
+          <img
+            src={dressTitle}
+            alt="ine y zorro"
+            width="40%"
+            data-aos="fade-in"
+          />
           <div className="text-dresscode">
             <h2>mujeres</h2>
             <h2 className="text">
@@ -234,7 +239,12 @@ const Home = () => {
         {/* REGALOS SECTION START */}
         <section className="regalos__container" id="regalos">
           <img src={thirdTitle} alt="ana y zorro" className="third--title" />
-          <img src={travelPhoto} alt="ine y zorro" className="travel--photo" />
+          <img
+            src={travelPhoto}
+            alt="ine y zorro"
+            className="travel--photo"
+            data-aos="fade-in"
+          />
           <div className="como-regalar">
             <h2>
               CUALQUIER REGALO QUE RECIBAMOS LO VAMOS
@@ -294,7 +304,12 @@ const Home = () => {
               className="fourth--title"
             />
           </div>
-          <img src={cheersImage} alt="ana y zorro" className="cheers" />
+          <img
+            src={cheersImage}
+            alt="ana y zorro"
+            className="cheers"
+            data-aos="fade-in"
+          />
 
           <div>
             <h2>por favor confirmá tu asistencia</h2>
