@@ -143,9 +143,12 @@
   .dresscode__container {
     text-transform: uppercase;
     letter-spacing: 5pt;
-
+    h2 {
+      font-size: 22px;
+    }
     @include breakpoint(medium) {
       padding-bottom: 600px;
+      font-size: 24px;
     }
 
     .text {
@@ -253,7 +256,7 @@
     }
     .te-esperamos--title {
       .fourth--title {
-        width: 100%;
+        width: 85%;
         @include breakpoint(small) {
           width: 50%;
         }
