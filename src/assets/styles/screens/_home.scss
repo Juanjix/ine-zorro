@@ -200,7 +200,10 @@
   .regalos__container {
     font-family: "Baufra";
     .third--title {
-      width: 100%;
+      width: 90%;
+      @include breakpoint(small) {
+        width: 90%;
+      }
     }
     .travel--photo {
       width: 40%;
