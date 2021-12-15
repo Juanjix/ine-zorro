@@ -80,7 +80,7 @@ const Home = (props) => {
 
   useEffect(() => {
     diasHasta({ año: 2022, mes: 1, dia: 18 });
-  });
+  }, []);
 
   return (
     <LayoutPrimary>
