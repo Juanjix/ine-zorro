@@ -1,5 +1,5 @@
 // React
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 // Layout
 import LayoutPrimary from "layouts/layout-primary";
@@ -50,16 +50,14 @@ import lief3 from "assets/images/te-esperamos/recursoRecurso 23@2x.png";
 
 import Aos from "aos";
 import "aos/dist/aos";
-import { useState } from "react/cjs/react.development";
 
-const Home = (props) => {
+const Home = () => {
   useEffect(() => {
     Aos.init({
       duration: 3000, // values from 0 to 3000, with step 50ms
     });
   });
 
-  //final: array {dia, mes,año}
   const [faltanDias, setFaltanDias] = useState();
 
   const diasHasta = (final) => {
