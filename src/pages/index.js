@@ -50,19 +50,46 @@ import lief3 from "assets/images/te-esperamos/recursoRecurso 23@2x.png";
 
 import Aos from "aos";
 import "aos/dist/aos";
+import { useState } from "react/cjs/react.development";
 
-const Home = () => {
+const Home = (props) => {
   useEffect(() => {
     Aos.init({
       duration: 3000, // values from 0 to 3000, with step 50ms
     });
   });
+
+  //final: array {dia, mes,año}
+  const [faltanDias, setFaltanDias] = useState();
+
+  const diasHasta = (final) => {
+    var Hoy = new Date();
+
+    var fin = new Date(final.año, final.mes, final.dia);
+
+    var mseg_dia = 1000 * 60 * 60 * 24;
+
+    var dias;
+
+    if (Hoy.getMonth() === final.mes && Hoy.getDate() > final.dia)
+      fin.setFullYear(fin.getFullYear() + 1);
+
+    dias = Math.ceil((fin.getTime() - Hoy.getTime()) / mseg_dia);
+    setFaltanDias(dias);
+  };
+
+  useEffect(() => {
+    diasHasta({ año: 2022, mes: 1, dia: 18 });
+  });
+
   return (
     <LayoutPrimary>
       <div className="home__container">
         {/* INICIO SECTION START */}
         <section className="hero" id="inicio">
-          <h3 className="cuenta-regresiva">x días para dejarlo todo</h3>
+          <h3 className="cuenta-regresiva">
+            {faltanDias} días para dejarlo todo
+          </h3>
           <img src={image} alt="ine y zorro" className="first--title" />
           <div className="fecha--hora">
             <h1>18 . 02 . 2022</h1>
