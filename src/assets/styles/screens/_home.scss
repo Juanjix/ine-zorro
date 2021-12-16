@@ -142,13 +142,11 @@
 
   .dresscode__container {
     text-transform: uppercase;
-    letter-spacing: 5pt;
-    h2 {
-      font-size: 22px;
-    }
+    letter-spacing: 3pt;
     @include breakpoint(medium) {
       padding-bottom: 600px;
       font-size: 24px;
+      letter-spacing: 5pt;
     }
 
     .text {
@@ -199,6 +197,7 @@
   //STYLE REGALO SECTION START
   .regalos__container {
     font-family: "Baufra";
+
     .third--title {
       width: 91%;
       @include breakpoint(small) {
