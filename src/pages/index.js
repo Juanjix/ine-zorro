@@ -91,7 +91,6 @@ const Home = () => {
           <img src={image} alt="ine y zorro" className="first--title" />
           <div className="fecha--hora">
             <h1>18 . 02 . 2022</h1>
-            <h1> | 1 7 H S | </h1>
           </div>
 
           <div className="direccion">
