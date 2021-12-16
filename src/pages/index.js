@@ -54,7 +54,7 @@ import "aos/dist/aos";
 const Home = () => {
   useEffect(() => {
     Aos.init({
-      duration: 3001, // values from 0 to 3000, with step 50ms
+      duration: 3000, // values from 0 to 3000, with step 50ms
     });
   });
 
