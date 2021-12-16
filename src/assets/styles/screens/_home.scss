@@ -8,7 +8,7 @@
       letter-spacing: 5pt;
     }
     .first--title {
-      width: 100%;
+      width: 80%;
       margin-top: 20px;
       margin-bottom: 32px;
 
@@ -143,6 +143,7 @@
   .dresscode__container {
     text-transform: uppercase;
     letter-spacing: 5pt;
+    display: none;
     h2 {
       font-size: 22px;
     }
@@ -156,7 +157,6 @@
     }
 
     .dress-code--images {
-      display: none;
       justify-content: space-between;
 
       @include breakpoint(medium) {
