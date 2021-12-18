@@ -63,7 +63,7 @@
     .mapa {
       position: absolute;
 
-      margin-left: 25px;
+      margin-left: 45px;
       img {
         width: 90%;
       }
@@ -97,10 +97,11 @@
       //     margin-bottom: 100px;
       //   }
 
-      //   .first-photo-map {
-      //     width: 50%;
-      //     margin-right: 50px;
-      //   }
+      .first-photo-map {
+        @include breakpoint(medium) {
+          margin-bottom: 250px;
+        }
+      }
 
       //   .cs-hotel-section {
       //     display: flex;
@@ -124,6 +125,10 @@
       .third-photo-map {
         margin-right: 40px;
         margin-bottom: 100px;
+
+        @include breakpoint(medium) {
+          margin-bottom: 500px;
+        }
       }
       //   }
 
