@@ -61,12 +61,11 @@
       }
     }
     .mapa {
-      @include breakpoint(small) {
-        position: absolute;
-      }
-      margin-left: 45px;
+      position: absolute;
+
+      margin-left: 25px;
       img {
-        width: 100%;
+        width: 90%;
       }
       @include breakpoint(small) {
         img {
@@ -77,66 +76,72 @@
     }
 
     .stop--images {
-      display: none;
-      @include breakpoint(small) {
-        display: flex;
-        justify-content: space-between;
-        margin-top: -20px;
-        margin-bottom: 100px;
+      display: flex;
+      margin-bottom: 50px;
 
-        &:last-child {
-          margin-bottom: 50px;
-        }
-      }
       @include breakpoint(medium) {
-        margin-bottom: 100px;
+        justify-content: space-between;
       }
+      //   display: none;
+      //   @include breakpoint(small) {
+      //     display: flex;
+      //     justify-content: space-between;
+      //     margin-top: -20px;
+      //     margin-bottom: 100px;
 
-      .first-photo-map {
-        width: 50%;
-        margin-right: 50px;
-      }
+      //     &:last-child {
+      //       margin-bottom: 50px;
+      //     }
+      //   }
+      //   @include breakpoint(medium) {
+      //     margin-bottom: 100px;
+      //   }
 
-      .cs-hotel-section {
-        display: flex;
-        flex-direction: column;
-        .second-photo-map {
-          width: 40%;
-        }
-        .lief {
-          width: 20%;
-          margin-left: 200px;
-        }
-      }
+      //   .first-photo-map {
+      //     width: 50%;
+      //     margin-right: 50px;
+      //   }
 
-      .ej {
-        display: flex;
+      //   .cs-hotel-section {
+      //     display: flex;
+      //     flex-direction: column;
+      //     .second-photo-map {
+      //       width: 40%;
+      //     }
+      //     .lief {
+      //       width: 20%;
+      //       margin-left: 200px;
+      //     }
+      //   }
 
-        .lief2 {
-          width: 80%;
-          margin-right: -60px;
-        }
-        .third-photo-map {
-          width: 50%;
-          margin-right: 200px;
-        }
-      }
+      //   .ej {
+      //     display: flex;
 
-      .four-photo-map {
-        width: 40%;
-        margin-left: 90px;
-        @include breakpoint(small) {
-          margin-bottom: 150px;
-        }
-      }
+      //     .lief2 {
+      //       width: 80%;
+      //       margin-right: -60px;
+      //     }
+      //     .third-photo-map {
+      //       width: 50%;
+      //       margin-right: 200px;
+      //     }
+      //   }
 
-      .fifth-photo-map {
-        width: 40%;
-      }
+      //   .four-photo-map {
+      //     width: 40%;
+      //     margin-left: 90px;
+      //     @include breakpoint(small) {
+      //       margin-bottom: 150px;
+      //     }
+      //   }
 
-      .sixth-photo-map {
-        width: 40%;
-      }
+      //   .fifth-photo-map {
+      //     width: 40%;
+      //   }
+
+      //   .sixth-photo-map {
+      //     width: 40%;
+      //   }
     }
   } // STYLE COMO LLEGAR SECTION END
 

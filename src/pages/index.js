@@ -115,23 +115,25 @@ const Home = () => {
             <img src={mapa} alt="ana y zorro" data-aos="fade-in" />
           </div>
 
-          <div className="stop--images row">
-            <div className="col-md-5">
+          <div className="stop--images">
+            <div>
               <img
                 src={firstPhotoMap}
                 alt="ana y zorro"
                 className="first-photo-map"
                 data-aos="fade-right"
+                width="25%"
               />
             </div>
 
-            <div className="cs-hotel-section col-md-5">
+            <div>
               <div>
                 <img
                   src={secondPhotoMap}
                   alt="ana y zorro"
                   className="second-photo-map"
                   data-aos="fade-left"
+                  width="25%"
                 />
               </div>
               <div>
@@ -140,27 +142,30 @@ const Home = () => {
                   alt="ana y zorro"
                   className="lief"
                   data-aos="fade-left"
+                  width="25%"
                 />
               </div>
             </div>
           </div>
 
           <div className="stop--images">
-            <div className="ej col-md-6">
-              <div>
-                <img
-                  src={lief2}
-                  alt="ana y zorro"
-                  className="lief2"
-                  data-aos="fade-right"
-                />
-              </div>
+            <div className="ej">
               <div>
                 <img
                   src={thirdPhotoMap}
                   alt="ana y zorro"
                   className="third-photo-map"
                   data-aos="fade-right"
+                  width="25%"
+                />
+              </div>
+              <div>
+                <img
+                  src={lief2}
+                  alt="ana y zorro"
+                  className="lief2"
+                  data-aos="fade-right"
+                  width="25%"
                 />
               </div>
             </div>
@@ -171,17 +176,19 @@ const Home = () => {
                 alt="ana y zorro"
                 className="four-photo-map"
                 data-aos="fade-left"
+                width="25%"
               />
             </div>
           </div>
 
-          <div className="stop--images row">
+          <div className="stop--images">
             <div className="col-md-4">
               <img
                 src={fifthPhotoMap}
                 alt="ana y zorro"
                 className="fifth-photo-map"
                 data-aos="fade-right"
+                width="25%"
               />
             </div>
 
@@ -191,6 +198,7 @@ const Home = () => {
                 alt="ana y zorro"
                 className="sixth-photo-map"
                 data-aos="fade-left"
+                width="25%"
               />
             </div>
           </div>
