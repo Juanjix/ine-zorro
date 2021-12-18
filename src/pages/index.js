@@ -18,7 +18,7 @@ import lief from "assets/images/como-llegar/recursoRecurso 7@2x.png";
 // Imagenes seccion como llegar? SEGUNDA FILA
 import thirdPhotoMap from "assets/images/como-llegar/recursoRecurso 5@2x.png";
 import fourPhotoMap from "assets/images/como-llegar/recursoRecurso 6@2x.png";
-import lief2 from "assets/images/como-llegar/recursoRecurso 8@2x.png";
+// import lief2 from "assets/images/como-llegar/recursoRecurso 8@2x.png";
 
 // Imagenes seccion como llegar? TERCERA FILA
 import fifthPhotoMap from "assets/images/como-llegar/recursoRecurso 9@2x.png";
@@ -159,7 +159,7 @@ const Home = () => {
                   width="25%"
                 />
               </div>
-              <div>
+              {/* <div>
                 <img
                   src={lief2}
                   alt="ana y zorro"
@@ -167,7 +167,7 @@ const Home = () => {
                   data-aos="fade-right"
                   width="25%"
                 />
-              </div>
+              </div> */}
             </div>
 
             <div data-aos="fade-left" className="col-md-6">
@@ -176,7 +176,7 @@ const Home = () => {
                 alt="ana y zorro"
                 className="four-photo-map"
                 data-aos="fade-left"
-                width="25%"
+                width="35%"
               />
             </div>
           </div>
