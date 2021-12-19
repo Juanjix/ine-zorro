@@ -115,7 +115,7 @@ const Home = () => {
           </div>
 
           <div className="stop--images">
-            <div className="col-md-5">
+            <div>
               <img
                 src={firstPhotoMap}
                 alt="ana y zorro"
@@ -125,7 +125,7 @@ const Home = () => {
               />
             </div>
 
-            <div className="cs-hotel-section col-md-5">
+            <div className="cs-hotel-section">
               <div>
                 <img
                   src={secondPhotoMap}
@@ -148,7 +148,7 @@ const Home = () => {
           </div>
 
           <div className="stop--images">
-            <div className="ej col-md-6">
+            <div className="ej">
               {/* <div>
                 <img
                   src={lief2}
@@ -214,8 +214,9 @@ const Home = () => {
           <div className="text-dresscode">
             <h2>mujeres</h2>
             <h2 className="text">
-              corto o largo ... lo que prefieras
-              <br /> ponerte vas a estar bárbara!
+              corto o largo <span>...</span> <br />
+              lo que prefieras ponerte
+              <br /> vas a estar bárbara!
             </h2>
             <br />
             <br />

@@ -2,7 +2,6 @@
 .container {
   max-width: 1120px;
   width: 100%;
-  // padding: 0 16px;
   margin: 0 auto;
 
   @include breakpoint(medium) {
@@ -10,7 +9,7 @@
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 26px;
 
     @include breakpoint(medium) {
       font-size: 32px;

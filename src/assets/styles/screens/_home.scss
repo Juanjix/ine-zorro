@@ -172,13 +172,22 @@
 
     .text {
       font-family: "Baufra";
+      span {
+        display: none;
+      }
+      @include breakpoint(extraLarge) {
+        margin: 0px 100px 0px 100px;
+        span {
+          display: block;
+        }
+      }
     }
 
     .images-mobile {
       display: flex;
       margin-top: 32px;
 
-      @include breakpoint(large) {
+      @include breakpoint(medium) {
         display: none;
       }
     }
