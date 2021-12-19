@@ -156,7 +156,7 @@ const Home = () => {
                   alt="ana y zorro"
                   className="third-photo-map"
                   data-aos="fade-right"
-                  width="20%"
+                  width="25%"
                 />
               </div>
               {/* <div>
@@ -176,7 +176,7 @@ const Home = () => {
                 alt="ana y zorro"
                 className="four-photo-map"
                 data-aos="fade-left"
-                width="29%"
+                width="25%"
               />
             </div>
           </div>
