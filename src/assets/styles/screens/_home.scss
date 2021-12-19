@@ -161,11 +161,20 @@
       font-family: "Baufra";
     }
 
+    .mobile-images {
+      margin-top: 30px;
+      display: flex;
+
+      @include breakpoint(medium) {
+        display: none;
+      }
+    }
+
     .dress-code--images {
       display: none;
       justify-content: space-between;
 
-      @include breakpoint(medium) {
+      @include breakpoint(large) {
         display: flex;
         margin-top: -550px;
         position: relative;
@@ -195,7 +204,7 @@
         width: 15%;
         position: absolute;
 
-        @include breakpoint(medium) {
+        @include breakpoint(large) {
           width: 18%;
           right: 0;
         }
@@ -207,10 +216,7 @@
     font-family: "Baufra";
 
     .third--title {
-      width: 91%;
-      @include breakpoint(small) {
-        width: 90%;
-      }
+      width: 85%;
     }
     .travel--photo {
       width: 40%;

@@ -227,6 +227,40 @@ const Home = () => {
               <br /> pero no por eso dejes de venir de fiesta
             </h2>
           </div>
+          <div className="mobile-images">
+            <div>
+              <img
+                src={dressCodeLief1}
+                alt="ine y zorro"
+                className="dc-image1"
+                data-aos="fade-right"
+                width="15%"
+              />
+              <img
+                src={dressCodeImage1}
+                alt="ine y zorro"
+                className="dc-image1"
+                data-aos="fade-right"
+                width="35%"
+              />
+            </div>
+            <div>
+              <img
+                src={dressCodeImage2}
+                alt="ine y zorro"
+                className="dc-image2"
+                data-aos="fade-left"
+                width="35%"
+              />
+              <img
+                src={dressCodeLief2}
+                alt="ine y zorro"
+                className="dc-lief2"
+                data-aos="fade-left"
+                width="10%"
+              />
+            </div>
+          </div>
           <div className="dress-code--images row">
             <div className="col-md-1">
               <div>
