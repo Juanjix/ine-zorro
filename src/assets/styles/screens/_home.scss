@@ -88,10 +88,10 @@
       margin-bottom: 100px;
 
       @include breakpoint(medium) {
-        margin-bottom: 300px;
+        margin-bottom: 100px;
         justify-content: space-between;
         &:last-child {
-          margin-bottom: 0;
+          margin-bottom: 100px;
         }
       }
       @include breakpoint(large) {
@@ -116,25 +116,30 @@
       //   margin-right: 50px;
       // }
 
-      // .cs-hotel-section {
-      //   display: flex;
-      //   flex-direction: column;
-      //   .second-photo-map {
-      //     width: 40%;
-      //   }
-      //   .lief {
-      //     width: 20%;
-      //     margin-left: 200px;
-      //   }
+      .cs-hotel-section {
+        display: flex;
+        flex-direction: column;
+      }
+      .lief {
+        display: none;
+        @include breakpoint(extraLarge) {
+          display: block;
+          margin-left: 220px;
+        }
+      }
       // }
 
       // .ej {
       //   display: flex;
 
-      //   .lief2 {
-      //     width: 80%;
-      //     margin-right: -60px;
-      //   }
+      .lief2 {
+        display: none;
+        @include breakpoint(extraLarge) {
+          display: block;
+
+          margin-left: 220px;
+        }
+      }
       //   .third-photo-map {
       //     width: 50%;
       //     margin-right: 200px;

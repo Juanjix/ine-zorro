@@ -135,29 +135,20 @@ const Home = () => {
                   width="40%"
                 />
               </div>
-              {/* <div>
+              <div>
                 <img
                   src={lief}
                   alt="ana y zorro"
                   className="lief"
                   data-aos="fade-left"
-                  width="40%"
+                  width="20%"
                 />
-              </div> */}
+              </div>
             </div>
           </div>
 
           <div className="stop--images">
             <div className="ej">
-              {/* <div>
-                <img
-                  src={lief2}
-                  alt="ana y zorro"
-                  className="lief2"
-                  data-aos="fade-right"
-                  width="40%"
-                />
-              </div> */}
               <div>
                 <img
                   src={thirdPhotoMap}
@@ -165,6 +156,15 @@ const Home = () => {
                   className="third-photo-map"
                   data-aos="fade-right"
                   width="30%"
+                />
+              </div>
+              <div>
+                <img
+                  src={lief2}
+                  alt="ana y zorro"
+                  className="lief2"
+                  data-aos="fade-right"
+                  width="15%"
                 />
               </div>
             </div>
@@ -214,9 +214,8 @@ const Home = () => {
           <div className="text-dresscode">
             <h2>mujeres</h2>
             <h2 className="text">
-              corto o largo <span>...</span> <br />
-              lo que prefieras ponerte
-              <br /> vas a estar bárbara!
+              corto o largo ... lo que prefieras
+              <br /> ponerte vas a estar bárbara!
             </h2>
             <br />
             <br />
