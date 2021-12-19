@@ -153,6 +153,15 @@
       font-family: "Baufra";
     }
 
+    .images-mobile {
+      display: flex;
+      margin-top: 32px;
+
+      @include breakpoint(large) {
+        display: none;
+      }
+    }
+
     .dress-code--images {
       display: none;
       justify-content: space-between;

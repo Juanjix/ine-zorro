@@ -18,7 +18,7 @@ import lief from "assets/images/como-llegar/recursoRecurso 7@2x.png";
 // Imagenes seccion como llegar? SEGUNDA FILA
 import thirdPhotoMap from "assets/images/como-llegar/recursoRecurso 5@2x.png";
 import fourPhotoMap from "assets/images/como-llegar/recursoRecurso 6@2x.png";
-// import lief2 from "assets/images/como-llegar/recursoRecurso 8@2x.png";
+import lief2 from "assets/images/como-llegar/recursoRecurso 8@2x.png";
 
 // Imagenes seccion como llegar? TERCERA FILA
 import fifthPhotoMap from "assets/images/como-llegar/recursoRecurso 9@2x.png";
@@ -91,7 +91,6 @@ const Home = () => {
           <img src={image} alt="ine y zorro" className="first--title" />
           <div className="fecha--hora">
             <h1>18 . 02 . 2022</h1>
-            <h1> | 1 7 H S | </h1>
           </div>
 
           <div className="direccion">
@@ -115,25 +114,23 @@ const Home = () => {
             <img src={mapa} alt="ana y zorro" data-aos="fade-in" />
           </div>
 
-          <div className="stop--images">
-            <div>
+          <div className="stop--images row">
+            <div className="col-md-5">
               <img
                 src={firstPhotoMap}
                 alt="ana y zorro"
                 className="first-photo-map"
                 data-aos="fade-right"
-                width="25%"
               />
             </div>
 
-            <div>
+            <div className="cs-hotel-section col-md-5">
               <div>
                 <img
                   src={secondPhotoMap}
                   alt="ana y zorro"
                   className="second-photo-map"
                   data-aos="fade-left"
-                  width="25%"
                 />
               </div>
               <div>
@@ -142,32 +139,29 @@ const Home = () => {
                   alt="ana y zorro"
                   className="lief"
                   data-aos="fade-left"
-                  width="25%"
                 />
               </div>
             </div>
           </div>
 
           <div className="stop--images">
-            <div className="ej">
+            <div className="ej col-md-6">
+              <div>
+                <img
+                  src={lief2}
+                  alt="ana y zorro"
+                  className="lief2"
+                  data-aos="fade-right"
+                />
+              </div>
               <div>
                 <img
                   src={thirdPhotoMap}
                   alt="ana y zorro"
                   className="third-photo-map"
                   data-aos="fade-right"
-                  width="25%"
                 />
               </div>
-              {/* <div>
-                <img
-                  src={lief2}
-                  alt="ana y zorro"
-                  className="lief2"
-                  data-aos="fade-right"
-                  width="25%"
-                />
-              </div> */}
             </div>
 
             <div data-aos="fade-left" className="col-md-6">
@@ -176,19 +170,17 @@ const Home = () => {
                 alt="ana y zorro"
                 className="four-photo-map"
                 data-aos="fade-left"
-                width="25%"
               />
             </div>
           </div>
 
-          <div className="stop--images">
+          <div className="stop--images row">
             <div className="col-md-4">
               <img
                 src={fifthPhotoMap}
                 alt="ana y zorro"
                 className="fifth-photo-map"
                 data-aos="fade-right"
-                width="25%"
               />
             </div>
 
@@ -198,7 +190,6 @@ const Home = () => {
                 alt="ana y zorro"
                 className="sixth-photo-map"
                 data-aos="fade-left"
-                width="25%"
               />
             </div>
           </div>
@@ -227,38 +218,28 @@ const Home = () => {
               <br /> pero no por eso dejes de venir de fiesta
             </h2>
           </div>
-          <div className="mobile-images">
+          <div className="images-mobile">
             <div>
-              <img
-                src={dressCodeLief1}
-                alt="ine y zorro"
-                className="dc-image1"
-                data-aos="fade-right"
-                width="15%"
-              />
-              <img
-                src={dressCodeImage1}
-                alt="ine y zorro"
-                className="dc-image1"
-                data-aos="fade-right"
-                width="35%"
-              />
+              <div>
+                <img
+                  src={dressCodeImage1}
+                  alt="ine y zorro"
+                  className="dc-image1"
+                  data-aos="fade-right"
+                  width="40%"
+                />
+              </div>
             </div>
             <div>
-              <img
-                src={dressCodeImage2}
-                alt="ine y zorro"
-                className="dc-image2"
-                data-aos="fade-left"
-                width="35%"
-              />
-              <img
-                src={dressCodeLief2}
-                alt="ine y zorro"
-                className="dc-lief2"
-                data-aos="fade-left"
-                width="10%"
-              />
+              <div>
+                <img
+                  src={dressCodeImage2}
+                  alt="ine y zorro"
+                  className="dc-image2"
+                  data-aos="fade-left"
+                  width="40%"
+                />
+              </div>
             </div>
           </div>
           <div className="dress-code--images row">
