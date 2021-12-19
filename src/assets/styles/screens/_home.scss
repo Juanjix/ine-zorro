@@ -61,96 +61,88 @@
       }
     }
     .mapa {
-      position: absolute;
+      @include breakpoint(small) {
+        position: absolute;
+      }
       margin-left: 45px;
       img {
-        width: 90%;
+        width: 100%;
       }
       @include breakpoint(small) {
         img {
+          width: 70%;
           margin: 0 auto;
         }
       }
     }
 
     .stop--images {
-      display: flex;
-      margin-bottom: 90px;
-
-      @include breakpoint(medium) {
+      display: none;
+      @include breakpoint(small) {
+        display: flex;
         justify-content: space-between;
-      }
-      //   display: none;
-      //   @include breakpoint(small) {
-      //     display: flex;
-      //     justify-content: space-between;
-      //     margin-top: -20px;
-      //     margin-bottom: 100px;
-
-      //     &:last-child {
-      //       margin-bottom: 50px;
-      //     }
-      //   }
-      //   @include breakpoint(medium) {
-      //     margin-bottom: 100px;
-      //   }
-
-      .first-photo-map {
-        @include breakpoint(small) {
-          margin-bottom: 250px;
-        }
-      }
-
-      //   .cs-hotel-section {
-      //     display: flex;
-      //     flex-direction: column;
-      //     .second-photo-map {
-      //       width: 40%;
-      //     }
-      //     .lief {
-      //       width: 20%;
-      //       margin-left: 200px;
-      //     }
-      //   }
-
-      //   .ej {
-      //     display: flex;
-
-      //     .lief2 {
-      //       width: 80%;
-      //       margin-right: -60px;
-      //     }
-      .third-photo-map {
+        margin-top: -20px;
         margin-bottom: 100px;
 
-        @include breakpoint(medium) {
-          margin-bottom: 500px;
+        &:last-child {
+          margin-bottom: 50px;
         }
       }
-      //   }
+      @include breakpoint(medium) {
+        margin-bottom: 100px;
+      }
 
-      //   .four-photo-map {
-      //     width: 40%;
-      //     margin-left: 90px;
-      //     @include breakpoint(small) {
-      //       margin-bottom: 150px;
-      //     }
-      //   }
+      .first-photo-map {
+        width: 30%;
+        margin-right: 50px;
+      }
 
-      //   .fifth-photo-map {
-      //     width: 40%;
-      //   }
+      .cs-hotel-section {
+        display: flex;
+        flex-direction: column;
+        .second-photo-map {
+          width: 40%;
+        }
+        .lief {
+          width: 20%;
+          margin-left: 200px;
+        }
+      }
 
-      //   .sixth-photo-map {
-      //     width: 40%;
-      //   }
+      .ej {
+        display: flex;
+
+        .lief2 {
+          width: 80%;
+          margin-right: -60px;
+        }
+        .third-photo-map {
+          width: 50%;
+          margin-right: 200px;
+        }
+      }
+
+      .four-photo-map {
+        width: 40%;
+        margin-left: 90px;
+        @include breakpoint(small) {
+          margin-bottom: 150px;
+        }
+      }
+
+      .fifth-photo-map {
+        width: 40%;
+      }
+
+      .sixth-photo-map {
+        width: 40%;
+      }
     }
   } // STYLE COMO LLEGAR SECTION END
 
   .dresscode__container {
     text-transform: uppercase;
-    letter-spacing: 2pt;
-    text-align: center;
+    letter-spacing: 3pt;
     @include breakpoint(medium) {
       padding-bottom: 600px;
       font-size: 24px;
@@ -161,20 +153,11 @@
       font-family: "Baufra";
     }
 
-    .mobile-images {
-      margin-top: 30px;
-      display: flex;
-
-      @include breakpoint(medium) {
-        display: none;
-      }
-    }
-
     .dress-code--images {
       display: none;
       justify-content: space-between;
 
-      @include breakpoint(large) {
+      @include breakpoint(medium) {
         display: flex;
         margin-top: -550px;
         position: relative;
@@ -204,7 +187,7 @@
         width: 15%;
         position: absolute;
 
-        @include breakpoint(large) {
+        @include breakpoint(medium) {
           width: 18%;
           right: 0;
         }
@@ -216,7 +199,10 @@
     font-family: "Baufra";
 
     .third--title {
-      width: 85%;
+      width: 91%;
+      @include breakpoint(small) {
+        width: 90%;
+      }
     }
     .travel--photo {
       width: 40%;
