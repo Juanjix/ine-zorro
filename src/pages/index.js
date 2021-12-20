@@ -214,16 +214,18 @@ const Home = () => {
           <div className="text-dresscode">
             <h2>mujeres</h2>
             <h2 className="text">
-              corto o largo ... lo que prefieras
+              corto o largo... lo que prefieras
               <br /> ponerte vas a estar bárbara!
             </h2>
             <br />
             <br />
             <h2>hombres</h2>
-            <h2 className="text">
+            <h2 className="text2">
               abstenerse de trajes calurosos.
-              <br /> Porque ni el novio se lo va a poner!
-              <br /> pero no por eso dejes de venir de fiesta
+              <br /> Porque ni el novio
+              <br /> se lo va a poner!
+              <br /> pero no por eso dejes
+              <br /> de venir de fiesta
             </h2>
           </div>
           <div className="images-mobile">

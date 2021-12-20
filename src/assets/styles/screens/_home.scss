@@ -174,7 +174,7 @@
 
   .dresscode__container {
     text-transform: uppercase;
-    letter-spacing: 3pt;
+    letter-spacing: 1pt;
     overflow-y: hidden;
     @include breakpoint(medium) {
       padding-bottom: 600px;
@@ -192,6 +192,27 @@
         margin: 0px 100px 0px 100px;
         span {
           display: block;
+        }
+      }
+    }
+
+    .text2 {
+      font-family: "Baufra";
+      span {
+        display: none;
+      }
+      @include breakpoint(extraLarge) {
+        margin: 0px 100px 0px 100px;
+        span {
+          display: block;
+        }
+        br {
+          &:last-child {
+            display: none;
+          }
+          &:nth-child(2) {
+            display: none;
+          }
         }
       }
     }
@@ -264,7 +285,13 @@
         margin-top: -50px;
       }
     }
+    .como-regalar {
+      letter-spacing: 1pt;
 
+      @include breakpoint(medium) {
+        letter-spacing: 2pt;
+      }
+    }
     .regalo-images {
       justify-content: space-between;
       @include breakpoint(small) {
