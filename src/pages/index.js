@@ -114,23 +114,25 @@ const Home = () => {
             <img src={mapa} alt="ana y zorro" data-aos="fade-in" />
           </div>
 
-          <div className="stop--images row">
-            <div className="col-md-5">
+          <div className="stop--images">
+            <div>
               <img
                 src={firstPhotoMap}
                 alt="ana y zorro"
                 className="first-photo-map"
                 data-aos="fade-right"
+                width="40%"
               />
             </div>
 
-            <div className="cs-hotel-section col-md-5">
+            <div className="cs-hotel-section">
               <div>
                 <img
                   src={secondPhotoMap}
                   alt="ana y zorro"
                   className="second-photo-map"
                   data-aos="fade-left"
+                  width="40%"
                 />
               </div>
               <div>
@@ -139,57 +141,63 @@ const Home = () => {
                   alt="ana y zorro"
                   className="lief"
                   data-aos="fade-left"
+                  width="20%"
                 />
               </div>
             </div>
           </div>
 
           <div className="stop--images">
-            <div className="ej col-md-6">
-              <div>
-                <img
-                  src={lief2}
-                  alt="ana y zorro"
-                  className="lief2"
-                  data-aos="fade-right"
-                />
-              </div>
+            <div className="ej">
               <div>
                 <img
                   src={thirdPhotoMap}
                   alt="ana y zorro"
                   className="third-photo-map"
                   data-aos="fade-right"
+                  width="30%"
+                />
+              </div>
+              <div>
+                <img
+                  src={lief2}
+                  alt="ana y zorro"
+                  className="lief2"
+                  data-aos="fade-right"
+                  width="15%"
                 />
               </div>
             </div>
 
-            <div data-aos="fade-left" className="col-md-6">
+            <div data-aos="fade-left">
               <img
                 src={fourPhotoMap}
                 alt="ana y zorro"
                 className="four-photo-map"
                 data-aos="fade-left"
+                width="40%"
               />
             </div>
           </div>
 
-          <div className="stop--images row">
-            <div className="col-md-4">
+          <div className="stop--images">
+            <div>
               <img
                 src={fifthPhotoMap}
                 alt="ana y zorro"
                 className="fifth-photo-map"
                 data-aos="fade-right"
+                width="40%"
               />
             </div>
 
-            <div className="col-md-6">
+            <div>
               <img
                 src={sixthPhotoMap}
                 alt="ana y zorro"
                 className="sixth-photo-map"
                 data-aos="fade-left"
+                width="40%"
               />
             </div>
           </div>
@@ -206,17 +214,43 @@ const Home = () => {
           <div className="text-dresscode">
             <h2>mujeres</h2>
             <h2 className="text">
-              corto o largo ... lo que prefieras
+              corto o largo... lo que prefieras
               <br /> ponerte vas a estar bárbara!
             </h2>
             <br />
             <br />
             <h2>hombres</h2>
-            <h2 className="text">
+            <h2 className="text2">
               abstenerse de trajes calurosos.
-              <br /> Porque ni el novio se lo va a poner!
-              <br /> pero no por eso dejes de venir de fiesta
+              <br /> Porque ni el novio
+              <br /> se lo va a poner!
+              <br /> pero no por eso dejes
+              <br /> de venir de fiesta
             </h2>
+          </div>
+          <div className="images-mobile">
+            <div>
+              <div>
+                <img
+                  src={dressCodeImage1}
+                  alt="ine y zorro"
+                  className="dc-image1"
+                  data-aos="fade-right"
+                  width="40%"
+                />
+              </div>
+            </div>
+            <div>
+              <div>
+                <img
+                  src={dressCodeImage2}
+                  alt="ine y zorro"
+                  className="dc-image2"
+                  data-aos="fade-left"
+                  width="40%"
+                />
+              </div>
+            </div>
           </div>
           <div className="dress-code--images row">
             <div className="col-md-1">

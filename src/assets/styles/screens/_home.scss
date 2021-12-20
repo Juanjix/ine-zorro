@@ -51,7 +51,15 @@
   // STYLE UBUCACION SECTION START
   .ubicacion__container {
     position: relative;
-    padding-bottom: 20px;
+    overflow: hidden;
+
+    @include breakpoint(medium) {
+      padding-bottom: 500;
+    }
+
+    @include breakpoint(large) {
+      padding-bottom: 100px;
+    }
     .second--title {
       width: 70%;
 
@@ -61,96 +69,161 @@
       }
     }
     .mapa {
-      @include breakpoint(small) {
-        position: absolute;
-      }
+      position: absolute;
       margin-left: 45px;
       img {
-        width: 100%;
+        width: 90%;
       }
       @include breakpoint(small) {
         img {
           width: 70%;
           margin: 0 auto;
+          margin-left: 45px;
         }
+      }
+      @include breakpoint(extraLarge) {
+        margin-left: 45px;
       }
     }
 
     .stop--images {
-      display: none;
-      @include breakpoint(small) {
-        display: flex;
-        justify-content: space-between;
-        margin-top: -20px;
-        margin-bottom: 100px;
+      overflow-y: hidden;
+      display: flex;
+      margin-bottom: 120px;
 
-        &:last-child {
-          margin-bottom: 50px;
-        }
+      &:last-child {
+        margin-bottom: 20px;
       }
+
       @include breakpoint(medium) {
         margin-bottom: 100px;
+        justify-content: space-between;
+        &:last-child {
+          margin-bottom: 100px;
+        }
       }
+      @include breakpoint(large) {
+        overflow-y: unset;
+      }
+      // @include breakpoint(small) {
+      //   display: flex;
+      //   justify-content: space-between;
+      //   margin-top: -20px;
+      //   margin-bottom: 100px;
 
-      .first-photo-map {
-        width: 30%;
-        margin-right: 50px;
-      }
+      //   &:last-child {
+      //     margin-bottom: 50px;
+      //   }
+      // }
+      // @include breakpoint(medium) {
+      //   margin-bottom: 100px;
+      // }
+
+      // .first-photo-map {
+      //   width: 30%;
+      //   margin-right: 50px;
+      // }
 
       .cs-hotel-section {
         display: flex;
         flex-direction: column;
-        .second-photo-map {
-          width: 40%;
-        }
-        .lief {
-          width: 20%;
-          margin-left: 200px;
-        }
       }
-
-      .ej {
-        display: flex;
-
-        .lief2 {
-          width: 80%;
-          margin-right: -60px;
-        }
-        .third-photo-map {
-          width: 50%;
-          margin-right: 200px;
+      .lief {
+        display: none;
+        @include breakpoint(extraLarge) {
+          display: block;
+          margin-left: 220px;
         }
       }
+      // }
 
-      .four-photo-map {
-        width: 40%;
-        margin-left: 90px;
-        @include breakpoint(small) {
-          margin-bottom: 150px;
+      // .ej {
+      //   display: flex;
+
+      .lief2 {
+        display: none;
+        @include breakpoint(extraLarge) {
+          display: block;
+
+          margin-left: 220px;
         }
       }
+      //   .third-photo-map {
+      //     width: 50%;
+      //     margin-right: 200px;
+      //   }
+      // }
 
-      .fifth-photo-map {
-        width: 40%;
-      }
+      // .four-photo-map {
+      //   width: 40%;
+      //   margin-left: 90px;
+      //   @include breakpoint(small) {
+      //     margin-bottom: 150px;
+      //   }
+      // }
 
-      .sixth-photo-map {
-        width: 40%;
-      }
+      // .fifth-photo-map {
+      //   width: 40%;
+      // }
+
+      // .sixth-photo-map {
+      //   width: 40%;
+      // }
     }
   } // STYLE COMO LLEGAR SECTION END
 
   .dresscode__container {
     text-transform: uppercase;
-    letter-spacing: 3pt;
+    letter-spacing: 1pt;
+    overflow-y: hidden;
     @include breakpoint(medium) {
       padding-bottom: 600px;
       font-size: 24px;
       letter-spacing: 5pt;
+      overflow-y: visible;
     }
 
     .text {
       font-family: "Baufra";
+      span {
+        display: none;
+      }
+      @include breakpoint(extraLarge) {
+        margin: 0px 100px 0px 100px;
+        span {
+          display: block;
+        }
+      }
+    }
+
+    .text2 {
+      font-family: "Baufra";
+      span {
+        display: none;
+      }
+      @include breakpoint(extraLarge) {
+        margin: 0px 100px 0px 100px;
+        span {
+          display: block;
+        }
+        br {
+          &:last-child {
+            display: none;
+          }
+          &:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .images-mobile {
+      display: flex;
+      margin-top: 32px;
+
+      @include breakpoint(medium) {
+        display: none;
+      }
     }
 
     .dress-code--images {
@@ -212,7 +285,13 @@
         margin-top: -50px;
       }
     }
+    .como-regalar {
+      letter-spacing: 1pt;
 
+      @include breakpoint(medium) {
+        letter-spacing: 2pt;
+      }
+    }
     .regalo-images {
       justify-content: space-between;
       @include breakpoint(small) {
