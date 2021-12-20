@@ -306,7 +306,8 @@ const Home = () => {
           />
           <div className="como-regalar">
             <h2>
-              CUALQUIER REGALO QUE RECIBAMOS LO VAMOS
+              CUALQUIER REGALO
+              <br /> QUE RECIBAMOS LO VAMOS
               <br /> A USAR PARA IRNOS DE LUNA DE MIEL.
             </h2>
             <br></br>

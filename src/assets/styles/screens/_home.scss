@@ -286,10 +286,16 @@
       }
     }
     .como-regalar {
-      letter-spacing: 1pt;
+      letter-spacing: 0pt;
 
       @include breakpoint(medium) {
         letter-spacing: 2pt;
+
+        br {
+          &:nth-child(1) {
+            display: none;
+          }
+        }
       }
     }
     .regalo-images {
