@@ -78,7 +78,11 @@
         img {
           width: 70%;
           margin: 0 auto;
+          margin-left: 45px;
         }
+      }
+      @include breakpoint(extraLarge) {
+        margin-left: 45px;
       }
     }
 
