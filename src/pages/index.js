@@ -91,6 +91,7 @@ const Home = () => {
           <img src={image} alt="ine y zorro" className="first--title" />
           <div className="fecha--hora">
             <h1>18 . 02 . 2022</h1>
+            <h1> | 17 HS | </h1>
           </div>
 
           <div className="direccion">
@@ -305,7 +306,8 @@ const Home = () => {
           />
           <div className="como-regalar">
             <h2>
-              CUALQUIER REGALO QUE RECIBAMOS LO VAMOS
+              CUALQUIER REGALO
+              <br /> QUE RECIBAMOS LO VAMOS
               <br /> A USAR PARA IRNOS DE LUNA DE MIEL.
             </h2>
             <br></br>
