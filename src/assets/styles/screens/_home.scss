@@ -89,7 +89,11 @@
     .stop--images {
       overflow-y: hidden;
       display: flex;
-      margin-bottom: 100px;
+      margin-bottom: 120px;
+
+      &:last-child {
+        margin-bottom: 20px;
+      }
 
       @include breakpoint(medium) {
         margin-bottom: 100px;
