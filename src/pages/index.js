@@ -101,7 +101,7 @@ const Home = () => {
               className="logo-herencia"
             />
             <h1>LA HERENCIA</h1>
-            <h4>SARAVIA 1799, PILAR</h4>
+            <h4>SARAVI 1799, PILAR</h4>
           </div>
         </section>
 
