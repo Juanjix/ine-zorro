@@ -58,27 +58,27 @@ const Home = () => {
     });
   });
 
-  const [faltanDias, setFaltanDias] = useState();
+  // const [faltanDias, setFaltanDias] = useState();
 
-  const diasHasta = (final) => {
-    var Hoy = new Date();
+  // const diasHasta = (final) => {
+  //   var Hoy = new Date();
 
-    var fin = new Date(final.año, final.mes, final.dia);
+  //   var fin = new Date(final.año, final.mes, final.dia);
 
-    var mseg_dia = 1000 * 60 * 60 * 24;
+  //   var mseg_dia = 1000 * 60 * 60 * 24;
 
-    var dias;
+  //   var dias;
 
-    if (Hoy.getMonth() === final.mes && Hoy.getDate() > final.dia)
-      fin.setFullYear(fin.getFullYear() + 1);
+  //   if (Hoy.getMonth() === final.mes && Hoy.getDate() > final.dia)
+  //     fin.setFullYear(fin.getFullYear() + 1);
 
-    dias = Math.ceil((fin.getTime() - Hoy.getTime()) / mseg_dia);
-    setFaltanDias(dias);
-  };
+  //   dias = Math.ceil((fin.getTime() - Hoy.getTime()) / mseg_dia);
+  //   setFaltanDias(dias);
+  // };
 
-  useEffect(() => {
-    diasHasta({ año: 2022, mes: 1, dia: 18 });
-  }, []);
+  // useEffect(() => {
+  //   diasHasta({ año: 2022, mes: 1, dia: 18 });
+  // }, []);
 
   return (
     <LayoutPrimary>
