@@ -1,5 +1,5 @@
 // React
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 // Layout
 import LayoutPrimary from "layouts/layout-primary";
